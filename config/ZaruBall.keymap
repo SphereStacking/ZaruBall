@@ -30,15 +30,15 @@
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LANG2>, <&mo RAISE>, <&mo MOUSE>;
+            tapping-term-ms = <400>;
+            bindings = <&mt LEFT_ALT LANG2>, <&mo RAISE>, <&mo MOUSE>;
         };
 
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LANG1>, <&mo RAISE>, <&mo 5>;
+            tapping-term-ms = <400>;
+            bindings = <&mt RIGHT_CONTROL LANG1>, <&mo RAISE>, <&mo 5>;
         };
     };
 };
