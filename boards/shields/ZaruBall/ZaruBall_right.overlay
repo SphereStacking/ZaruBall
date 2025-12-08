@@ -1,5 +1,7 @@
 #include "ZaruBall.dtsi"
-//#include <dt-bindings/zmk/input_transform.h>
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 
 // matrix transformでのピン数オフセット
@@ -82,9 +84,25 @@
     };
 };
 
+#define MOUSE 4
+#define LOWER 1
+#define RAISE 2
+
 / {
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
+
+    // automouse: auto-switch to MOUSE(4) layer, 500ms timeout
+    input-processors = <&zip_temp_layer MOUSE 500>;
+
+    // scroll: LOWER(1), RAISE(2) layers enable scroll mode
+    scroller {
+        layers = <LOWER RAISE>;
+        input-processors = <
+            &zip_xy_scaler 1 16
+            &zip_xy_to_scroll_mapper
+        >;
+    };
   };
 };
