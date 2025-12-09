@@ -99,7 +99,7 @@
 &kp TAB       &kp Q   &kp L       &kp U   &kp COMMA     &kp PERIOD                       &kp F         &kp W     &kp R   &kp Y   &kp P   &kp LC(B)
 &kp LEFT_ALT  &kp E   &kp I       &kp A   &kp O         &kp MINUS      &kp EQUAL         &kp LBKT      &kp K     &kp T   &kp N   &kp S   &kp H      &lt 2 GRAVE
 &kp LSHFT     &kp Z   &kp X       &kp C   &kp V         &kp SEMICOLON  &kp SQT           &kp RBKT      &kp G     &kp D   &kp M   &kp J   &kp B      &lt 1 BACKSLASH
-&td0          &none   &kp C_MUTE  &kp LEFT_ALT  &kp LEFT_WIN  &kp SPACE      &to_scroll_layer  &lt 2 RET     &kp BSPC                          &td1
+&td0          &kp C_MUTE  &kp LEFT_ALT  &kp LEFT_WIN  &kp SPACE      &to_scroll_layer  &lt 2 RET     &kp BSPC                          &td1
             >;
         };
 
@@ -111,7 +111,7 @@
 &trans  &kp F6   &kp F7     &kp F8    &kp F9     &kp F10              &kp LA(F1)  &kp KP_N4     &kp KP_N5   &kp KP_N6  &kp KP_MULTIPLY  &none
 &trans  &kp F11  &kp F12    &kp UP    &none      &kp HOME  &kp PG_UP  &kp LPAR    &kp C_VOL_UP  &kp KP_N1   &kp KP_N2  &kp KP_N3        &kp KP_MINUS    &none
 &trans  &none    &kp LEFT   &kp DOWN  &kp RIGHT  &kp END   &kp PG_DN  &kp RPAR    &kp C_VOL_DN  &kp KP_DOT  &kp KP_N0  &kp KP_EQUAL     &kp KP_PLUS     &none
-&trans   &none   &kp RSHFT  &trans    &trans     &trans    &trans     &trans      &kp DEL                                               &studio_unlock
+&trans           &kp RSHFT  &trans    &trans     &trans    &trans     &trans      &kp DEL                                               &studio_unlock
             >;
         };
 
@@ -123,7 +123,7 @@
 &trans  &none  &none  &none      &none      &none                            &none      &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
 &trans  &none  &none  &mkp RCLK  &mkp LCLK  &msc SCRL_UP    &msc SCRL_LEFT   &kp PG_UP  &kp HOME        &none         &kp DOWN_ARROW   &none  &none   &none
 &trans  &none  &none  &mkp MB4   &mkp MB5   &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp PG_DN  &kp END         &none         &none            &none  &none   &none
-&trans  &none  &none  &trans     &trans     &trans          &trans           &trans     &kp DEL                                               &trans
+&trans         &none  &trans     &trans     &trans          &trans           &trans     &kp DEL                                               &trans
             >;
         };
 
@@ -135,7 +135,7 @@
 &trans  &none         &none         &none         &none         &none                 &bt BT_CLR      &none           &none  &none  &none  &none
 &trans  &none         &none         &none         &none         &none         &none   &none           &out OUT_TOG    &none  &none  &none  &none   &none
 &trans  &none         &none         &none         &none         &none         &none   &none           &studio_unlock  &none  &none  &none  &none   &none
-&trans        &none   &kp C_MUTE    &trans        &trans        &trans        &trans  &trans          &kp DEL                              &trans
+&trans                &kp C_MUTE    &trans        &trans        &trans        &trans  &trans          &kp DEL                              &trans
             >;
         };
 
@@ -147,7 +147,7 @@
 &trans  &to_layer_0 Q   &to_layer_0 L   &to_layer_0 U   &to_layer_0 COMMA  &to_layer_0 PERIOD                     &to_layer_0 F     &to_layer_0 W   &mkp MCLK       &mkp RCLK       &to_layer_0 P   &to_layer_0 INS
 &trans  &to_layer_0 E   &to_layer_0 I   &to_layer_0 A   &to_layer_0 O      &to_layer_0 MINUS   &to_layer_0 EQUAL  &to_layer_0 LBKT  &to_layer_0 K   &mkp LCLK       &to_layer_0 N   &to_layer_0 S   &to_layer_0 H      &to_layer_0 GRAVE
 &trans  &to_layer_0 Z   &to_layer_0 X   &to_layer_0 C   &to_layer_0 V      &to_layer_0 SEMI    &to_layer_0 SQT    &to_layer_0 RBKT  &to_layer_0 G   &mkp MB4        &mkp MB5        &to_layer_0 J   &to_layer_0 B      &to_layer_0 NON_US_BACKSLASH
-&trans          &none   &trans          &trans          &trans             &trans              &trans             &trans            &trans                                                          &trans
+&trans                  &trans          &trans          &trans             &trans              &trans             &trans            &trans                                                          &trans
             >;
         };
 
@@ -159,7 +159,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
@@ -169,7 +169,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
     };
