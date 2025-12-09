@@ -95,11 +95,11 @@
             display-name = "Base";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-&kp ESC       &kp N1  &kp N2      &kp N3        &kp N4        &kp N5                           &kp NUMBER_6  &kp N7    &kp N8  &kp N9  &kp N0  &kp SLASH
-&kp TAB       &kp Q   &kp L       &kp U         &kp COMMA     &kp PERIOD                       &kp F         &kp W     &kp R   &kp Y   &kp P   &kp LC(B)
-&kp LEFT_ALT  &kp E   &kp I       &kp A         &kp O         &kp MINUS      &kp EQUAL         &kp LBKT      &kp K     &kp T   &kp N   &kp S   &kp H      &lt 2 GRAVE
-&kp LSHFT     &kp Z   &kp X       &kp C         &kp V         &kp SEMICOLON  &kp SQT           &kp RBKT      &kp G     &kp D   &kp M   &kp J   &kp B      &lt 1 BACKSLASH
-&td0                  &kp C_MUTE  &kp LEFT_ALT  &kp LEFT_WIN  &kp SPACE      &to_scroll_layer  &lt 2 RET     &kp BSPC                          &td1
+&kp ESC       &kp N1  &kp N2      &kp N3  &kp N4        &kp N5                           &kp NUMBER_6  &kp N7    &kp N8  &kp N9  &kp N0  &kp SLASH
+&kp TAB       &kp Q   &kp L       &kp U   &kp COMMA     &kp PERIOD                       &kp F         &kp W     &kp R   &kp Y   &kp P   &kp LC(B)
+&kp LEFT_ALT  &kp E   &kp I       &kp A   &kp O         &kp MINUS      &kp EQUAL         &kp LBKT      &kp K     &kp T   &kp N   &kp S   &kp H      &lt 2 GRAVE
+&kp LSHFT     &kp Z   &kp X       &kp C   &kp V         &kp SEMICOLON  &kp SQT           &kp RBKT      &kp G     &kp D   &kp M   &kp J   &kp B      &lt 1 BACKSLASH
+&td0                  &kp C_MUTE  &kp A   &kp LEFT_WIN  &kp SPACE      &to_scroll_layer  &lt 2 RET     &kp BSPC                          &td1
             >;
         };
 
